@@ -12,6 +12,9 @@ export const LoginScreenStyle = styled(Content)`
   justify-content: center;
   background-image: url(${BACKGROUND_LOGIN});
   position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .row-form {
     background-color: rgba(255, 255, 255, 0.05);
@@ -176,7 +179,8 @@ export const LoginScreenStyle = styled(Content)`
 
   .circle-icon {
     position: absolute;
-    top: 122px;
-    left: 191px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
