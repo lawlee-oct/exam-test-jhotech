@@ -18,6 +18,10 @@ import GroupSider9 from './GroupSider9';
 import GroupSider10 from './GroupSider10';
 import GroupSider11 from './GroupSider11';
 import LogoutIcon from './LogoutIcon';
+import LabelIcon from './LabelIcon';
+import OpportunitiesIcon from './OpportunitiesIcon';
+import TaskIcon from './TaskIcon';
+import ContactIcon from './ContactIcon';
 
 export {
   CircleIcon,
@@ -40,4 +44,8 @@ export {
   GroupSider10,
   GroupSider11,
   LogoutIcon,
+  ContactIcon,
+  OpportunitiesIcon,
+  LabelIcon,
+  TaskIcon,
 };

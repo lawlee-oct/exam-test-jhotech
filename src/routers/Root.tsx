@@ -24,6 +24,7 @@ const RootRouter: React.FC = () => {
     if (token) {
       void dispatch(getAuthAction());
       setRoutes([..._privateRoutes]);
+      navigate(ROUTERS.CONTACTS.PATH);
     } else {
       navigate(ROUTERS.LOGIN.PATH);
       setRoutes([..._publicRoutes]);

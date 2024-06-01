@@ -55,10 +55,50 @@ export const PrivateLayoutStyle = styled(Layout)`
   .layout-body {
     .body-content {
       overflow-y: auto;
-      padding: 18px;
       border-top: 1px solid #273140;
       background-color: #09091a;
       padding-left: 48px;
+
+      .ant-tabs-tab {
+        margin: 0;
+      }
+
+      .ant-tabs-nav {
+        padding: 0 13px;
+        height: 48px;
+        margin-bottom: 28px;
+
+        .ant-tabs-tab-btn {
+          padding: 0 20px;
+
+          span {
+            color: #a9abad;
+            display: flex;
+            align-items: center;
+
+            svg {
+              margin-right: 4px;
+            }
+          }
+        }
+
+        &::before {
+          border-bottom: 1px solid #273140;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        background-color: #dd531333;
+
+        span {
+          color: #ffffff !important;
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background: #dd5313;
+        height: 4px;
+      }
     }
 
     .body-footer {

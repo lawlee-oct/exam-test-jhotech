@@ -22,4 +22,20 @@ export const ROUTERS = {
     PATH: '/profile',
     LABEL: 'Profile',
   },
+  CONTACTS: {
+    PATH: '/contacts',
+    LABEL: 'Contacts',
+  },
+  ETIQUETTES: {
+    PATH: '/etiquettes',
+    LABEL: 'Étiquettes',
+  },
+  OPPORTUNITES: {
+    PATH: '/opportunites',
+    LABEL: 'Opportunités',
+  },
+  TACHES: {
+    PATH: '/taches',
+    LABEL: 'Tâches',
+  },
 };
