@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Col, Divider, Row, Typography } from 'antd';
 import Icon from '@ant-design/icons';
 
-import UseFormLogin from './hooks/useForm';
+import useFormLogin from './hooks/useForm';
 import { InputField, PasswordField } from 'src/components/form';
 import { ROUTERS } from 'src/constants/routers';
 import { useAppDispatch } from 'src/stores';
@@ -22,7 +22,7 @@ const LoginScreen: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
-  const { formik } = UseFormLogin();
+  const { formik } = useFormLogin();
 
   const { setFieldValue, getFieldProps, handleSubmit, errors, touched } = formik;
 

@@ -38,6 +38,7 @@ export const loginWithFacebookAction = createAsyncThunk<any, any>(
 
       if (token) {
         localStorage.setItem(LOCAL_STORAGE_KEY.TOKEN, token);
+        localStorage.setItem(LOCAL_STORAGE_KEY.DATA_USER, JSON.stringify(result.user));
 
         callback();
 
@@ -62,6 +63,7 @@ export const loginWithGoogleAction = createAsyncThunk<any, any>(
 
       if (token) {
         localStorage.setItem(LOCAL_STORAGE_KEY.TOKEN, token);
+        localStorage.setItem(LOCAL_STORAGE_KEY.DATA_USER, JSON.stringify(result.user));
 
         callback();
 
@@ -82,6 +84,16 @@ export const getMeAction = createAsyncThunk<any>('me', async (_, { dispatch, rej
     const res = await AUTH_API.getMeAPI();
 
     return res;
+  } catch (err: any) {
+    return rejectWithValue(err);
+  }
+});
+
+export const getAuthAction = createAsyncThunk<any>('get_auth', async (_, { dispatch, rejectWithValue }) => {
+  try {
+    const user = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY.DATA_USER) ?? '');
+
+    return user;
   } catch (err: any) {
     return rejectWithValue(err);
   }

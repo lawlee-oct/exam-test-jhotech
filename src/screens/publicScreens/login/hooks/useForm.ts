@@ -6,7 +6,7 @@ import { useAppDispatch } from 'src/stores';
 import { loginAction } from 'src/stores/screens/publicScreens/auth/auth.action';
 import { Login } from 'src/interfaces/pages/login';
 
-const UseFormLogin = (): Login.useForm => {
+const useFormLogin = (): Login.useForm => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
@@ -38,4 +38,4 @@ const UseFormLogin = (): Login.useForm => {
   return { formik };
 };
 
-export default UseFormLogin;
+export default useFormLogin;

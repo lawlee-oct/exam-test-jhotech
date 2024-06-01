@@ -3,6 +3,7 @@ export const LOCAL_STORAGE_KEY = {
   TOKEN: 'token',
   REFRESH_TOKEN: 'refresh_token',
   THEME: 'theme',
+  DATA_USER: 'data_user'
 };
 
 export const SYSTEM_ERROR = {

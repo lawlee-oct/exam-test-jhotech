@@ -7,11 +7,13 @@ import { Spin } from 'antd';
 import _publicRoutes from './_public';
 import _privateRoutes from './_private';
 import { LOCAL_STORAGE_KEY } from 'src/constants';
-import { useAppSelector } from 'src/stores';
+import { useAppDispatch, useAppSelector } from 'src/stores';
 import { ROUTERS } from 'src/constants/routers';
+import { getAuthAction } from 'src/stores/screens/publicScreens/auth/auth.action';
 
 const RootRouter: React.FC = () => {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
 
   const { isLoading, error } = useAppSelector(state => state.auth);
   const [routes, setRoutes] = useState<RouteObject[]>([]);
@@ -20,6 +22,7 @@ const RootRouter: React.FC = () => {
 
   useEffect(() => {
     if (token) {
+      void dispatch(getAuthAction());
       setRoutes([..._privateRoutes]);
     } else {
       navigate(ROUTERS.LOGIN.PATH);

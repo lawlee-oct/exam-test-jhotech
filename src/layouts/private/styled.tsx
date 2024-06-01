@@ -52,19 +52,12 @@ export const PrivateLayoutStyle = styled(Layout)`
   }
 
   .layout-body {
-    .body-header {
-      padding: 0;
-      background-color: transparent;
-      box-shadow: 1px 1px 1px lightblue;
-      text-align: right;
-      padding: 0 30px;
-    }
-
     .body-content {
       overflow-y: auto;
-      margin: 20px;
-      box-shadow: 3px 3px 2px 3px lightblue;
       padding: 18px;
+      border-top: 1px solid #273140;
+      border-left: 1px solid #273140;
+      background-color: #09091a;
     }
 
     .body-footer {
