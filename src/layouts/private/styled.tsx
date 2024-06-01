@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const PrivateLayoutStyle = styled(Layout)`
   height: 100%;
   width: 100%;
+  position: relative;
 
   .logo {
     height: 64px;
@@ -56,8 +57,8 @@ export const PrivateLayoutStyle = styled(Layout)`
       overflow-y: auto;
       padding: 18px;
       border-top: 1px solid #273140;
-      border-left: 1px solid #273140;
       background-color: #09091a;
+      padding-left: 48px;
     }
 
     .body-footer {
