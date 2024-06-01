@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+### Giải thích cấu trúc source:
+| Thư mục   | Chức năng     |
+| :-------- | :-------------|
+| assets | Lưu trữ các cài đặt tĩnh như ảnh, font, các định dạng file css tĩnh      |
+| components |Lưu trữ các common component dùng chung |
+| configs | Lưu trữ các config của các thư viện (Hiện tại có Axios) |
+| constants | Lưu trữ các file khai báo các hằng số |
+| screens | Lưu trữ các folder theo tên màn hình |
+| stores | Lưu trữ các cài đặt của redux - source sử dụng [Redux toolkit](https://redux-toolkit.js.org/introduction/getting-started) |
+| .eslintrc.js / .prettierrc / .editorconfig | config linter code / format code ts, tsx / format editor để đồng bộ 3 chức năng này theo hệ điều hành |
+| config-overrides.js | File để tuỳ biến cấu hình webpack mặc định của CRA |
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Source viết bằng Typescript - Ưu tiên sử dụng typescript (có cho phép allowJS ở tsconfig)
+- Đa số các configs code style / code convention đều là mặc định của thư viện
 
-## Available Scripts
+### Quy tắc đặt tên
+- Tên biến/Tên file có ý nghĩa
+- Tên folder camelCase, tên file function/hook/constant camelCase. Tên component/provider in hoa chữ cái đầu của mỗi từ. Không viết code sử lý trong file index.ts / index.tsx
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Để chạy
+- Để run được source code cần chuẩn bị môi trường như sau: Install [NodeJS(lastest)], Install [Yarn] or [NPM], [VsCode]
+- B1: Clone source
+- B2: Mở thư mục dự án tại IDE (VsCode,...)
+- B3: Create file .env tại thư mục dự án đồng cấp với file .env-example, nội dung file tôi sẽ gửi kèm với source code, coppy file -> paste vào
+- B4: Cài đặt các dependency: yarn install or npm install
+- B5: npm start or yarn start để chạy dự án trên local
