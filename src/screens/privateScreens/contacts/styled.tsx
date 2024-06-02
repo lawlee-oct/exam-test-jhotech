@@ -126,6 +126,26 @@ export const WrapperContact = styled(Row)`
             }
           }
 
+          .is-assginer {
+            border-radius: 24px;
+            background: #8ad74e33;
+            padding: 8px;
+            color: #8ad74e;
+            padding-left: 20px;
+
+            &::before {
+              content: '';
+              background-color: rgb(138, 215, 78);
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              display: flex;
+              position: absolute;
+              margin-top: 8px;
+              margin-left: 8px;
+            }
+          }
+
           .tag-first,
           .tag-second {
             margin-right: 4px;
@@ -166,45 +186,6 @@ export const WrapperContact = styled(Row)`
           }
         }
       }
-    }
-
-    .ant-pagination-item-link,
-    .ant-pagination-item {
-      background: transparent;
-      border: none;
-
-      .anticon,
-      a {
-        color: #ffffff;
-      }
-    }
-
-    .ant-pagination-item-active {
-      a {
-        border: 1px solid #273140;
-        border-radius: 10px;
-      }
-    }
-
-    .ant-pagination-options {
-      position: absolute;
-      left: 0;
-
-      .ant-select-selector {
-        background-color: transparent;
-        border: 1px solid #273140;
-        border-radius: 10px;
-
-        .ant-select-selection-item {
-          color: #ffffff;
-        }
-      }
-    }
-
-    .ant-pagination-total-text {
-      position: absolute;
-      left: 136px;
-      color: #ffffff;
     }
   }
 `;
