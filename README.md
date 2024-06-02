@@ -25,6 +25,6 @@
 - Để run được source code cần chuẩn bị môi trường như sau: Install [NodeJS(v20.12.2||lastest)], Install [Yarn] or [NPM], [VsCode IDE]
 - B1: Clone source
 - B2: Mở thư mục dự án tại IDE (VsCode,...)
-- B3: Create file .env tại thư mục dự án đồng cấp với file .env-example, nội dung file tôi sẽ gửi kèm với source code, coppy file -> paste vào
+- B3: Create file .env tại thư mục dự án đồng cấp với file .env-example, nội dung file tôi sẽ gửi kèm với source code, coppy file -> paste vào, giải nén file và đổi tên file thành .env
 - B4: Cài đặt các dependency tại terminal folder: yarn install or npm install
 - B5: npm start or yarn start để chạy dự án trên local
