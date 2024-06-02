@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Content } from 'antd/lib/layout/layout';
 
 import { BACKGROUND_LOGIN } from 'src/assets/image';
+import { COLOR } from 'src/constants';
 
 export const LoginScreenStyle = styled(Content)`
   height: 100%;
@@ -99,7 +100,7 @@ export const LoginScreenStyle = styled(Content)`
       margin-top: 28px;
 
       .ant-btn {
-        background-color: #dd5313;
+        background-color: ${COLOR.BACKGROUND_BUTTON_PRIMARY};
         width: 100%;
         height: 52px;
         border: none;
@@ -140,7 +141,7 @@ export const LoginScreenStyle = styled(Content)`
       margin-bottom: 8px;
 
       .ant-btn {
-        color: #dd5313;
+        color: ${COLOR.BACKGROUND_BUTTON_PRIMARY};
         font-weight: 600;
         font-style: 16px;
       }
@@ -169,7 +170,7 @@ export const LoginScreenStyle = styled(Content)`
         }
 
         &:last-child {
-          color: #dd5313;
+          color: ${COLOR.BACKGROUND_BUTTON_PRIMARY};
           margin-left: 10px;
           cursor: pointer;
         }

@@ -3,16 +3,14 @@ import type { RouteObject } from 'react-router-dom';
 
 import { ROUTERS } from 'src/constants/routers';
 import { PrivateLayout } from 'src/layouts';
-import { ProfileScreen, DashboardScreen } from 'src/screens/privateScreens';
 import NotFoundScreen from 'src/screens/NotFound';
+import { ContactScreen } from 'src/screens/privateScreens';
 
 const _privateRoutes: RouteObject[] = [
   {
     element: <PrivateLayout />,
     children: [
-      { path: ROUTERS.HOME.PATH, element: <DashboardScreen /> },
-      { path: ROUTERS.DASHBOARD.PATH, element: <DashboardScreen /> },
-      { path: ROUTERS.PROFILE.PATH, element: <ProfileScreen /> },
+      { path: ROUTERS.CONTACTS.PATH, element: <ContactScreen /> },
       { element: <NotFoundScreen />, path: '*' },
     ],
   },

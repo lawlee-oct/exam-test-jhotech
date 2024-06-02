@@ -31,7 +31,7 @@ const LoginScreen: React.FC = () => {
       void dispatch(
         loginWithGoogleAction({
           callback: () => {
-            navigate(ROUTERS.DASHBOARD.PATH);
+            navigate(ROUTERS.CONTACTS.PATH);
           },
         }),
       );
@@ -39,7 +39,7 @@ const LoginScreen: React.FC = () => {
       void dispatch(
         loginWithFacebookAction({
           callback: () => {
-            navigate(ROUTERS.DASHBOARD.PATH);
+            navigate(ROUTERS.CONTACTS.PATH);
           },
         }),
       );

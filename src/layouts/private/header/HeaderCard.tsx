@@ -51,7 +51,7 @@ const HeaderCard: React.FC = () => {
             }
           />
           <Text className="text-name">
-            {meInfo?.displayName} <br /> <Text className="text-role">CEO, Admin</Text>
+            {meInfo?.displayName ?? 'Sébastien Hanouna'} <br /> <Text className="text-role">CEO, Admin</Text>
           </Text>
         </Col>
       </Row>

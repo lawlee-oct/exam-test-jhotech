@@ -19,10 +19,13 @@ const RootRouter: React.FC = () => {
   const [routes, setRoutes] = useState<RouteObject[]>([]);
 
   const token = localStorage.getItem(LOCAL_STORAGE_KEY.TOKEN) as string;
+  const dataUser = localStorage.getItem(LOCAL_STORAGE_KEY.DATA_USER) as string;
 
   useEffect(() => {
     if (token) {
-      void dispatch(getAuthAction());
+      if (dataUser) {
+        void dispatch(getAuthAction());
+      }
       setRoutes([..._privateRoutes]);
       navigate(ROUTERS.CONTACTS.PATH);
     } else {

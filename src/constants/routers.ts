@@ -14,14 +14,6 @@ export const ROUTERS = {
   },
 
   // PRIVATE
-  DASHBOARD: {
-    PATH: '/dashboard',
-    LABEL: 'Dashboard',
-  },
-  PROFILE: {
-    PATH: '/profile',
-    LABEL: 'Profile',
-  },
   CONTACTS: {
     PATH: '/contacts',
     LABEL: 'Contacts',

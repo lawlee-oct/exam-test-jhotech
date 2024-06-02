@@ -17,3 +17,125 @@
     opacity: 0;
   }
 }
+
+// Ant-btn
+.ant-btn-primary {
+  background-color: #dd5313;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: #dd5313;
+  }
+}
+
+// Ant-form-item
+
+.ant-form-item {
+  position: relative;
+
+  .prefix-icon {
+    position: absolute;
+    left: 11px;
+    top: 10px;
+  }
+}
+
+// Table - Antd
+
+.ant-table {
+  background: #17202e !important;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 24px;
+
+  .ant-table-cell {
+    background: #17202e;
+    border-bottom: 1px solid #ffffff33;
+  }
+
+  .ant-table-row {
+    border-bottom: 1px solid #ffffff33;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      border-right: 1px solid #ffffff33;
+      color: #8b8b8b;
+
+      &:first-child,
+      &:last-child,
+      &:nth-child(7) {
+        border-right: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table-row {
+      .ant-table-cell {
+        border-right: 1px solid #ffffff33;
+        color: #ffffff;
+
+        .ant-typography {
+          color: #ffffff;
+        }
+
+        &:first-child,
+        &:last-child,
+        &:nth-child(7) {
+          border-right: none;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      &:hover {
+        .ant-table-cell {
+          background-color: #243145;
+          border-right: none;
+        }
+      }
+
+      &:last-child {
+        .ant-table-cell {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .ant-checkbox-inner {
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    border-radius: 4px;
+
+    &::after {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  .ant-table-row-selected {
+    .ant-table-cell {
+      background-color: transparent;
+      border-color: #ffffff33;
+    }
+  }
+}

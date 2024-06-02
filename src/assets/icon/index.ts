@@ -22,6 +22,13 @@ import LabelIcon from './LabelIcon';
 import OpportunitiesIcon from './OpportunitiesIcon';
 import TaskIcon from './TaskIcon';
 import ContactIcon from './ContactIcon';
+import PlusIcon from './PlusIcon';
+import FilterIcon from './FilterIcon';
+import SelectUserIcon from './SelectUserIcon';
+import PhoneIcon from './PhoneIcon';
+import EmailIcon from './EmailIcon';
+import EditIcon from './EditIcon';
+import DeleteIcon from './DeleteIcon';
 
 export {
   CircleIcon,
@@ -48,4 +55,11 @@ export {
   OpportunitiesIcon,
   LabelIcon,
   TaskIcon,
+  PlusIcon,
+  FilterIcon,
+  SelectUserIcon,
+  PhoneIcon,
+  EmailIcon,
+  EditIcon,
+  DeleteIcon,
 };

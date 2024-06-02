@@ -1,4 +1,5 @@
 import { Layout } from 'antd';
+import { COLOR } from 'src/constants';
 import styled from 'styled-components';
 
 export const PrivateLayoutStyle = styled(Layout)`
@@ -56,7 +57,7 @@ export const PrivateLayoutStyle = styled(Layout)`
     .body-content {
       overflow-y: auto;
       border-top: 1px solid #273140;
-      background-color: #09091a;
+      background-color: ${COLOR.BACKGROUND_SECONDARY};
       padding-left: 48px;
 
       .ant-tabs-tab {
@@ -96,7 +97,7 @@ export const PrivateLayoutStyle = styled(Layout)`
       }
 
       .ant-tabs-ink-bar {
-        background: #dd5313;
+        background: ${COLOR.BACKGROUND_BUTTON_PRIMARY};
         height: 4px;
       }
     }

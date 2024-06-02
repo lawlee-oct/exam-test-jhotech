@@ -1,11 +1,13 @@
 import { Layout } from 'antd';
 import styled from 'styled-components';
 
+import { COLOR } from 'src/constants';
+
 const { Header } = Layout;
 
 export const WrapperHeaderCard = styled(Header)`
   height: 72px;
-  background: #17202e;
+  background: ${COLOR.BACKGROUND_PRIMARY};
   padding: 0 24px 0 13px;
   z-index: 1;
 
@@ -45,7 +47,7 @@ export const WrapperHeaderCard = styled(Header)`
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        background-color: #dd5313;
+        background-color: ${COLOR.BACKGROUND_BUTTON_PRIMARY};
         border: none;
         display: flex;
         justify-content: center;
